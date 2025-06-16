@@ -1,0 +1,96 @@
+/* Общие мобильные стили */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.custom-body {
+    margin-top: 60px;
+    background-color: #fff3e0;
+}
+
+/* Хедер для мобильных */
+.main-header {
+    padding: 10px 15px;
+    flex-wrap: wrap;
+}
+
+.logo-link img {
+    height: 40px !important;
+    margin-right: 8px !important;
+}
+
+.logo-link span {
+    font-size: 14px !important;
+}
+
+/* Герой-секция для мобильных */
+section[style*="padding: 100px 20px"] {
+    padding: 40px 15px !important;
+}
+
+section[style*="padding: 100px 20px"] h2 {
+    font-size: 24px !important;
+}
+
+section[style*="padding: 100px 20px"] p {
+    font-size: 16px !important;
+    margin: 20px auto 0 !important;
+}
+
+/* Особенности для мобильных */
+div[style*="gap: 50px"] {
+    gap: 20px !important;
+    margin-top: 30px !important;
+}
+
+div[style*="max-width: 220px"] {
+    max-width: 100% !important;
+    width: 100%;
+    text-align: left;
+    padding: 0 15px;
+}
+
+/* Секция "Мы работаем" для мобильных */
+section[style*="background-color: #f0f0f0"] {
+    padding: 40px 15px !important;
+    flex-direction: column !important;
+}
+
+/* Отзывы для мобильных */
+div[style*="box-shadow: 0 2px 6px rgba(0,0,0,0.1)"] {
+    margin-top: 30px !important;
+}
+
+/* Услуги для мобильных */
+.finishing-services-section {
+    padding: 40px 15px !important;
+}
+
+div[style*="gap: 40px"] {
+    flex-direction: column !important;
+}
+
+/* Футер для мобильных */
+.site-footer {
+    padding: 30px 15px !important;
+    text-align: center !important;
+}
+
+/* Адаптация таблиц и других элементов */
+@media (max-width: 480px) {
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .header-phone {
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    a[href^="tel:"] {
+        display: block;
+        padding: 8px 0;
+    }
+}

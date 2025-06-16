@@ -5,149 +5,348 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Профессиональные отделочные работы в Омске. Квартиры, дома, коммерческие объекты. Гарантия, договор">
-    <meta name="keywords"
-        content="отделочные работы Омск, ремонт квартир Омск, строительные услуги Омск, шпаклевка Омск, плитка Омск, отделка под ключ">
-    <meta name="robots" content="index, follow">
+        content="Профессиональные отделочные работы в Омске. Качественно, в срок, под ключ. Гарантия 3 года.">
     <title>Отделочные работы в Омске - БИЛДИС</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=1.0">
+    <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 
-<body style="margin-top: 80px; background-color: #fff3e0;">
-    <header
-        style="position: fixed; top: 0; left: 0; width: 100%; background-color: #f2f2f2; padding: 8px 20px; display: flex; align-items: center; justify-content: space-between; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-        <a href="/" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
-            <img src="logo.png" alt="Логотип БИЛДИС" style="height: 64px; margin-right: 12px;">
-            <span style="font-size: 18px; font-weight: 600;">Строительная фирма «<span
-                    style="color: #d35400;">БИЛДИС</span>»</span>
-        </a>
-        <div style="font-size: 16px; font-weight: 500;">
-            <a href="tel:+79509507373" style="color: #d35400; text-decoration: none;">+7 (950) 950-73-73</a>
+<body>
+    <!-- Хедер с гамбургер-меню для мобильных -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="/" class="logo">
+                <img src="img/logo.png" alt="БИЛДИС" class="logo-img">
+                <span class="logo-text">Строительная фирма «<span class="logo-highlight">БИЛДИС</span>»</span>
+            </a>
+
+            <nav class="nav">
+                <button class="menu-toggle" aria-label="Меню">
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#services" class="nav-link">Услуги</a></li>
+                    <li><a href="#works" class="nav-link">Наши работы</a></li>
+                    <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-phone">
+                <a href="tel:+79509507373" class="phone-link">
+                    <i class="fas fa-phone-alt"></i> +7 (950) 950-73-73
+                </a>
+            </div>
         </div>
     </header>
 
-
-
-    <section style="text-align: center; padding: 100px 20px;">
-        <h2 style="font-size: 48px; font-weight: 900; line-height: 1.2; margin: 0 auto;">
-            ОТДЕЛОЧНЫЕ РАБОТЫ <span style="color: #d35400;">КАЧЕСТВЕННО</span>, <span style="color: #d35400;">В
-                СРОК</span>,
-            <span style="color: #d35400;">ПОД КЛЮЧ</span>
-        </h2>
-        <p style="font-size: 20px; margin: 40px auto 0;">
-            Вам не нужно тратить время на замеры, расчёты, покупку материалов и организацию работ — мы всё берём на
-            себя.
-        </p>
-        <div
-            style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; margin-top: 80px; font-size: 18px;">
-            <div style="max-width: 220px;">
-                <strong style="color: #d35400;">01</strong><br>
-                Все виды отделки — от черновой до чистовой
-            </div>
-            <div style="max-width: 220px;">
-                <strong style="color: #d35400;">02</strong><br>
-                Работаем по договору с юридическими и физическими лицами
-            </div>
-            <div style="max-width: 220px;">
-                <strong style="color: #d35400;">03</strong><br>
-                Аккуратно, с фотоотчётами на каждом этапе
-            </div>
-            <div style="max-width: 220px;">
-                <strong style="color: #d35400;">04</strong><br>
-                Гарантия до 3 лет на все виды работ
-            </div>
+    <!-- Герой-секция -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">
+                ОТДЕЛОЧНЫЕ РАБОТЫ <span class="text-highlight">КАЧЕСТВЕННО</span>,
+                <span class="text-highlight">В СРОК</span>, <span class="text-highlight">ПОД КЛЮЧ</span>
+            </h1>
+            <p class="hero-description">
+                Полный цикл работ от замеров до финальной уборки. Гарантия 3 года на все виды работ.
+            </p>
+            <button class="btn btn-primary" id="order-btn">
+                <span>Заказать расчёт</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
         </div>
     </section>
 
-    <section
-        style="background-color: #f0f0f0; display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 100px 50px;">
-        <div style="flex: 1;">
-            <h2 style="font-size: 32px; font-weight: 800;">Мы работаем</h2>
-            <p>Мы выполняем профессиональные отделочные работы в Омске.
-                Ремонтируем квартиры, дома и офисные помещения.</p>
-
-            <ul style="list-style: none; padding-left: 0; font-size: 18px;">
-                <li>🔧 Выполняем все виды отделки — от черновой до чистовой</li>
-                <li>📐 Работаем в квартирах, офисах, домах и на коммерческих объектах</li>
-                <li>📅 Средний срок выполнения — до 7 дней</li>
-            </ul>
-        </div>
-        <div style="flex: 1;">
-            <div
-                style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); font-size: 16px; line-height: 1.4;">
-                <h3 style="margin-top: 0; color: #d35400;">Отзывы клиентов</h3>
-                <blockquote style="margin: 0 0 20px;">
-                    «Сделали ремонт в квартире под ключ. Всё чётко по срокам, постоянно были на связи.»<br><strong>—
-                        Артём</strong>
-                </blockquote>
-                <blockquote style="margin: 0 0 20px;">
-                    «Очень довольны плиткой в ванной — аккуратно, чисто и быстро. Спасибо за фотоотчёты!»<br><strong>—
-                        Камилла</strong>
-                </blockquote>
-                <blockquote style="margin: 0;">
-                    «Быстро откликнулись, замер был в тот же день. По цене всё прозрачно, работой
-                    довольны.»<br><strong>— Женя</strong>
-                </blockquote>
-            </div>
-        </div>
-    </section>
-
-    <section class="finishing-services-section">
-        <div style="display: flex; gap: 40px;">
-            <div style="flex: 1;">
-                <h2 class="finishing-services-title">Услуги по отделке в Омске</h2>
-                <ul class="finishing-services-list">
-                    <li>Штукатурные и малярные работы</li>
-                    <li>Укладка плитки и напольных покрытий</li>
-                    <li>Сухая стяжка пола</li>
-                    <li>Монтаж натяжных потолков</li>
-                    <li>Сантехнические работы</li>
-                    <li>Демонтаж старых покрытий</li>
-                    <li>Шпаклёвка и покраска</li>
-                    <li>Утепление и шумоизоляция</li>
-                    <li>Монтаж перегородок и конструкций</li>
-                </ul>
-                <p class="finishing-services-note">Звоните — выезд мастера бесплатно.</p>
-            </div>
-            <div style="flex: 1;">
-                <div
-                    style="margin-top: 0; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                    <h3 style="margin-top: 0; color: #d35400;">Недавний объект</h3>
-                    <p style="margin: 0 0 10px;"><strong>Вид работ:</strong> Монтаж натяжного потолка</p>
-                    <p style="margin: 0 0 10px;"><strong>Площадь:</strong> 2,5 м²</p>
-                    <p style="margin: 0 0 10px;"><strong>Стоимость:</strong> 5 500 ₽</p>
-                    <p style="margin: 0;"><strong>Комментарий:</strong> Выполнено за 1 день, фотоотчёт отправлен
-                        заказчику через
-                        WhatsApp.</p>
+    <!-- Особенности -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">01</div>
+                    <p class="feature-text">Все виды отделки — от черновой до чистовой</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">02</div>
+                    <p class="feature-text">Работаем по договору с юридическими и физическими лицами</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">03</div>
+                    <p class="feature-text">Аккуратно, с фотоотчётами на каждом этапе</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">04</div>
+                    <p class="feature-text">Гарантия до 3 лет на все виды работ</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section style="padding: 80px 20px; background-color: #ffffff;">
-        <h2 style="font-size: 28px; font-weight: 700; text-align: center;">Часто задаваемые вопросы</h2>
-        <div style="margin: 30px auto; font-size: 18px; line-height: 1.6;">
-            <h3>Сколько стоит отделка квартиры?</h3>
-            <p>Цена зависит от площади и вида работ. Пример: укладка плитки — от 1500 ₽/м².</p>
-            <h3>Работаете ли вы с договором?</h3>
-            <p>Да, мы заключаем прозрачный договор без скрытых условий.</p>
-            <h3>Как быстро вы можете начать работу после обращения?</h3>
-            <p>Обычно мы выезжаем на замер в день обращения или на следующий день. Начать работу можем сразу после
-                подписания договора.</p>
+    <!-- О нас -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-content">
+                <h2 class="section-title">Мы работаем <span class="text-highlight">профессионально</span></h2>
+                <p class="section-text">20 лет на рынке отделочных работ в Омске. Ремонтируем квартиры, дома и
+                    коммерческие помещения.</p>
+
+                <ul class="about-list">
+                    <li class="about-item"><i class="fas fa-check"></i> Выполняем все виды отделки — от черновой до
+                        чистовой</li>
+                    <li class="about-item"><i class="fas fa-check"></i> Работаем в квартирах, офисах, домах и на
+                        коммерческих объектах</li>
+                    <li class="about-item"><i class="fas fa-check"></i> Средний срок выполнения — до 7 дней</li>
+                    <li class="about-item"><i class="fas fa-check"></i> 127 успешно завершённых объектов</li>
+                </ul>
+
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="127">0</div>
+                        <div class="stat-label">Проектов</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="12">0</div>
+                        <div class="stat-label">Лет опыта</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="98">0</div>
+                        <div class="stat-label">% клиентов</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-box">
+                <h3 class="reviews-title"><i class="fas fa-quote-left"></i> Отзывы клиентов</h3>
+                <div class="review-slider">
+                    <div class="review active">
+                        <p class="review-text">«Сделали ремонт в квартире под ключ. Всё чётко по срокам, постоянно были
+                            на связи.»</p>
+                        <div class="review-author">
+                            <div class="rating" data-rating="5">★★★★★</div>
+                            <strong>— Артём</strong>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p class="review-text">«Очень довольны плиткой в ванной — аккуратно, чисто и быстро. Спасибо за
+                            фотоотчёты!»</p>
+                        <div class="review-author">
+                            <div class="rating" data-rating="4">★★★★☆</div>
+                            <strong>— Камилла</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="site-footer">
-        <p>Индивидуальный предприниматель Бектимиров А. Е.</p>
-        <p>
-            Телефон: <a href="tel:+79509507373" aria-label="Позвонить по телефону +7 (950)-950-73-73">+7
-                (950)-950-73-73</a>
-        </p>
-        <p>
-            Email: <a href="mailto:info@buildis.ru" aria-label="Отправить email на info@buildis.ru">info@buildis.ru</a>
-        </p>
+    <!-- Услуги -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title centered-title">Наши <span class="text-highlight">услуги</span></h2>
+            <p class="section-subtitle">Полный спектр отделочных работ в Омске</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
+                    <h3 class="service-title">Штукатурные работы</h3>
+                    <p class="service-text">Качественное выравнивание стен любой сложности</p>
+                    <div class="service-price">от 450 ₽/м²</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-tile"></i></div>
+                    <h3 class="service-title">Укладка плитки</h3>
+                    <p class="service-text">Идеальная геометрия швов, ровные поверхности</p>
+                    <div class="service-price">от 1500 ₽/м²</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-ruler-combined"></i></div>
+                    <h3 class="service-title">Сухая стяжка пола</h3>
+                    <p class="service-text">Быстрое и ровное основание для любых покрытий</p>
+                    <div class="service-price">от 800 ₽/м²</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-border-style"></i></div>
+                    <h3 class="service-title">Монтаж потолков</h3>
+                    <p class="service-text">Натяжные, гипсокартонные и подвесные конструкции</p>
+                    <div class="service-price">от 550 ₽/м²</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section class="gallery" id="works">
+        <div class="container">
+            <h2 class="section-title centered-title">Наши <span class="text-highlight">работы</span></h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="img/work1.jpg" alt="Ремонт квартиры" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Ремонт квартиры</h3>
+                        <p class="gallery-location">ул. Ленина, 45</p>
+                        <button class="gallery-btn">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="img/work2.jpg" alt="Отделка ванной" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Отделка ванной</h3>
+                        <p class="gallery-location">ул. Красный путь, 12</p>
+                        <button class="gallery-btn">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="img/work3.jpg" alt="Офисный ремонт" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Офисный ремонт</h3>
+                        <p class="gallery-location">ул. Маршала Жукова, 34</p>
+                        <button class="gallery-btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact" id="contacts">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2 class="section-title">Контакты</h2>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Адрес</h3>
+                        <p>г. Омск, ул. Строителей, 15</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Телефон</h3>
+                        <p><a href="tel:+79509507373">+7 (950) 950-73-73</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@buildis.ru">info@buildis.ru</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Часы работы</h3>
+                        <p>Пн-Пт: 9:00 - 18:00<br>Сб: 10:00 - 15:00<br>Вс: выходной</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Оставьте заявку</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-input" placeholder=" " required>
+                        <label for="name" class="form-label">Ваше имя</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="phone" class="form-input" placeholder=" " required>
+                        <label for="phone" class="form-label">Телефон</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <span>Отправить</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="БИЛДИС" class="footer-logo-img">
+                    <span class="footer-logo-text">БИЛДИС</span>
+                </div>
+                <p class="footer-text">Профессиональные отделочные работы в Омске. Качественно, в срок, под ключ.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Услуги</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Штукатурные работы</a></li>
+                    <li><a href="#" class="footer-link">Укладка плитки</a></li>
+                    <li><a href="#" class="footer-link">Стяжка пола</a></li>
+                    <li><a href="#" class="footer-link">Монтаж потолков</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Компания</h4>
+                <ul class="footer-links">
+                    <li><a href="#about" class="footer-link">О нас</a></li>
+                    <li><a href="#works" class="footer-link">Наши работы</a></li>
+                    <li><a href="#reviews" class="footer-link">Отзывы</a></li>
+                    <li><a href="#contacts" class="footer-link">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Контакты</h4>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>г. Омск, ул. Строителей, 15</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+79509507373">+7 (950) 950-73-73</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@buildis.ru">info@buildis.ru</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">© 2023 БИЛДИС. Все права защищены. ИП Бектимиров А. Е.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
