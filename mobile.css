@@ -15,6 +15,12 @@ body {
     flex-wrap: wrap;
 }
 
+.mobile-menu {
+    display: flex;          /* Располагает детей в ряд */
+    align-items: center;    /* Вертикальное выравнивание по центру */
+    gap: 40px;              /* Отступы между элементами */
+}
+
 .logo-link img {
     height: 40px !important;
     margin-right: 8px !important;
@@ -83,14 +89,75 @@ div[style*="gap: 40px"] {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .header-phone {
         margin-top: 10px;
         width: 100%;
     }
-    
+
     a[href^="tel:"] {
         display: block;
         padding: 8px 0;
+    }
+}
+
+/* Бургер скрыт по умолчанию */
+.menu-toggle {
+    display: none;
+}
+
+/* Мобильное меню по умолчанию показано в строку для больших экранов */
+.mobile-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* При ширине 1100px и меньше — включаем мобильный режим */
+@media (max-width: 1100px) {
+    /* Показываем бургер */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Прячем меню по умолчанию */
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: var(--white);
+        position: absolute;
+        top: 80px;
+        right: 15px;
+        left: 15px;
+        padding: 15px;
+        box-shadow: var(--shadow);
+        border-radius: 8px;
+        z-index: 1000;
+
+        /* Состояние по умолчанию - скрыто */
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    /* При открытии */
+    .mobile-menu.open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+
+    /* Меню в колонку */
+    .nav-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Телефон тоже с отступом сверху */
+    .header-phone {
+        margin-top: 10px;
     }
 }
